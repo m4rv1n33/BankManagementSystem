@@ -18,7 +18,7 @@ public class Main {
     };
 
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
+        Scanner input = new Scanner(System.in); // Declare scanner
 
         // Start ATM
         System.out.println("Welcome to the ATM.");
@@ -37,7 +37,22 @@ public class Main {
         System.out.println("Please choose your account. (ID)");
         int choice = input.nextInt();
         if ((choice >= 1) && (choice <= 5)){
-            return choice;
+            Account selectedAccount = getAccountById(choice);
+
+            //PIN Verification
+            if (selectedAccount != null) {
+                System.out.println("Please enter your PIN:");
+                int enteredPin = input.nextInt();
+                if (enteredPin == selectedAccount.getPin()) {
+                    return choice;
+                } else {
+                    System.out.println("Incorrect PIN. Please try again.");
+                    return selectAccount(input);
+                }
+            } else {
+                System.out.println("Account not found. Please try again.");
+                return selectAccount(input);
+            }
         } else {
             System.out.println("Invalid account. Please try again.");
             return selectAccount(input);
