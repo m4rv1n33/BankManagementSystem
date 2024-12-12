@@ -62,6 +62,7 @@ public class Main {
             System.out.println("4. Exit");
             int menuChoiceINT = input.nextInt();
             if (menuChoiceINT == 4) {
+                System.out.println("Exiting... Thank you for using the ATM.");
                 break;
             }
             else {
@@ -79,6 +80,7 @@ public class Main {
                         break;
                     case 3:
                         System.out.println("Withdraw selected.");
+                        System.out.println("Available balance: " + account.getBalance());
                         System.out.println("Enter amount to withdraw: ");
                         int withdrawAmount = input.nextInt();
                         if (withdrawAmount > account.getBalance()) {
