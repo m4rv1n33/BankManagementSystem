@@ -4,6 +4,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
@@ -17,7 +18,7 @@ public class AccountController {
             new Account(5, 500, "Jane Smith", 7777)
     };
 
-    @GetMapping("/")
+    @GetMapping("")
     public String index() {
         return "index";
     }
