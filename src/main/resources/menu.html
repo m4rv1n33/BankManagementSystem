@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>ATM Menu</title>
+</head>
+<body>
+<h1>ATM Menu</h1>
+<p th:text="'Welcome, ' + ${account.name}"></p>
+<p th:text="'Account ID: ' + ${account.id}"></p>
+<form action="/menu" method="post">
+    <input type="hidden" name="accountId" th:value="${account.id}">
+    <label for="action">Select an option:</label>
+    <select id="action" name="action">
+        <option value="checkBalance">Check Balance</option>
+        <option value="deposit">Deposit</option>
+        <option value="withdraw">Withdraw</option>
+        <option value="exit">Exit</option>
+    </select>
+    <br>
+    <label for="amount">Amount (for deposit/withdraw):</label>
+    <input type="number" id="amount" name="amount">
+    <br>
+    <button type="submit">Submit</button>
+</form>
+<p th:text="${message}"></p>
+</body>
+</html>
