@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="49f58087-2a34-4d52-92e4-19825f58d521" name="Changes" comment="Implemented PIN">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="49f58087-2a34-4d52-92e4-19825f58d521" name="Changes" comment="Styling html pages">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/error.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/error.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/AccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/AccountController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/menu.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -130,7 +128,7 @@
       <workItem from="1734346919688" duration="1425000" />
       <workItem from="1734429502683" duration="1969000" />
       <workItem from="1734601038587" duration="6000" />
-      <workItem from="1734603016863" duration="1700000" />
+      <workItem from="1734603016863" duration="2344000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <option name="closed" value="true" />
@@ -164,7 +162,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734005406696</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Styling html pages">
+      <option name="closed" value="true" />
+      <created>1734604862148</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1734604862148</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -186,7 +192,8 @@
     <MESSAGE value="Fixed Errors&#10;Implemented While loop for menu.&#10;Choosing account now by ID" />
     <MESSAGE value="Minor improvements" />
     <MESSAGE value="Implemented PIN" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented PIN" />
+    <MESSAGE value="Styling html pages" />
+    <option name="LAST_COMMIT_MESSAGE" value="Styling html pages" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

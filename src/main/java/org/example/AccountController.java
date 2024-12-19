@@ -57,8 +57,8 @@ public class AccountController {
                         model.addAttribute("message", "Insufficient funds.");
                     }
                     break;
-                case "exit":
-                    return "index";
+               // case "exit":
+                  //  return "index";
             }
             model.addAttribute("account", account);
             return "menu";

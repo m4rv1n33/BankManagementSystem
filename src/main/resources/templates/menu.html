@@ -34,13 +34,28 @@
             box-sizing: border-box;
         }
         .styled-select {
-            padding: 10px;
-            margin: 5px;
+            font-size: 14px;
+            padding: 5px;
+            margin: 2px;
             border: 1px solid #ccc;
             border-radius: 4px;
             box-sizing: border-box;
             background-color: #1abc9c;
             color: #000000;
+            font-family: "Roboto Light", sans-serif;
+        }
+        .styled-button2 {
+            background-color: #e74c3c;
+            color: #000000;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 12px;
             font-family: "Roboto Light", sans-serif;
         }
     </style>
@@ -56,7 +71,6 @@
         <option value="checkBalance">Check Balance</option>
         <option value="deposit">Deposit</option>
         <option value="withdraw">Withdraw</option>
-        <option value="exit">Exit</option>
     </select>
     <br>
     <label for="amount">Amount (for deposit/withdraw):</label>
@@ -65,5 +79,6 @@
     <button type="submit" class="styled-button">Submit</button>
 </form>
 <p th:text="${message}"></p>
+<a href="/" class="styled-button2">Logout</a>
 </body>
 </html>
