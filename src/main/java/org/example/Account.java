@@ -1,9 +1,9 @@
 package org.example;
 
-/**
+/*
  * Author: Marvin Strasser
- * Version: 1.0
- * Date: 10/12/2024
+ * Version: 1.1
+ * Date: 19/12/2024
  */
 public class Account {
     int id;

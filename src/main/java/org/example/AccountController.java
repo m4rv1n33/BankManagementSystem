@@ -1,5 +1,9 @@
 package org.example;
-
+/*
+ * Author: Marvin Strasser
+ * Version: 1.1
+ * Date: 19/12/2024
+ */
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;

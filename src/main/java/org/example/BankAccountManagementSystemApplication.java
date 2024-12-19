@@ -1,6 +1,7 @@
-/**
+/*
  * Author: Marvin Strasser
- * Version: 1.0
+ * Version: 1.1
+ * Date: 19/12/2024
  */
 package org.example;
 
