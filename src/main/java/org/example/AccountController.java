@@ -48,21 +48,23 @@ public class AccountController {
                     model.addAttribute("message", "Your balance is: " + account.getBalance());
                     break;
                 case "deposit":
-                    if (amount != null) {
+                    if (amount != null && amount > 0) {
                         account.setBalance(account.getBalance() + amount);
                         model.addAttribute("message", "Deposited " + amount + ". New balance is: " + account.getBalance());
+                    } else {
+                        model.addAttribute("message", "Invalid amount.");
                     }
                     break;
                 case "withdraw":
-                    if (amount != null && amount <= account.getBalance()) {
+                    if (amount != null && amount > 0 && amount <= account.getBalance()) {
                         account.setBalance(account.getBalance() - amount);
                         model.addAttribute("message", "Withdrew " + amount + ". New balance is: " + account.getBalance());
-                    } else {
+                    } else if (amount != null && amount > 0) {
                         model.addAttribute("message", "Insufficient funds.");
+                    } else {
+                        model.addAttribute("message", "Invalid amount.");
                     }
                     break;
-               // case "exit":
-                  //  return "index";
             }
             model.addAttribute("account", account);
             return "menu";
