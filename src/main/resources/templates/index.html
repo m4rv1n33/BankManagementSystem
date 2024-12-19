@@ -1,18 +1,61 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html th:lang="en" xmlns:th="http://www.thymeleaf.org" data-bs-theme="dark">
 <head>
     <title>ATM</title>
+
+    <style>
+        body {
+            font-family: "Roboto Light", sans-serif;
+            color: #FFFFFF;
+            background-color: #17202a;
+            text-align: center;
+        }
+        .styled-button {
+            background-color: #1abc9c;
+            color: #000000;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 12px;
+            font-family: "Roboto Light", sans-serif;
+        }
+        .styled-button:hover {
+            background-color: #16a085;
+        }
+        .styled-input {
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .styled-select {
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            background-color: #1abc9c;
+            color: #000000;
+            font-family: "Roboto Light", sans-serif;
+        }
+    </style>
 </head>
 <body>
 <h1>Welcome to the ATM</h1>
 <form action="/selectAccount" method="post">
     <label for="accountId">Account ID:</label>
-    <input type="number" id="accountId" name="accountId" required>
+    <input type="number" id="accountId" name="accountId" class="styled-input" required>
     <br>
     <label for="pin">PIN:</label>
-    <input type="number" id="pin" name="pin" required>
+    <input type="number" id="pin" name="pin" class="styled-input" required>
     <br>
-    <button type="submit">Submit</button>
+    <button type="submit" class="styled-button">Submit</button>
 </form>
 <p th:text="${error}"></p>
 </body>

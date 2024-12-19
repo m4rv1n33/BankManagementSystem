@@ -1,11 +1,53 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html th:lang="en" xmlns:th="http://www.thymeleaf.org" data-bs-theme="dark">
 <head>
     <title>Error</title>
+    <style>
+        body {
+            font-family: "Roboto Light", sans-serif;
+            color: #FFFFFF;
+            background-color: #17202a;
+            text-align: center;
+        }
+        .styled-button {
+            background-color: #1abc9c;
+            color: #000000;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 12px;
+            font-family: "Roboto Light", sans-serif;
+        }
+        .styled-button:hover {
+            background-color: #16a085;
+        }
+        .styled-input {
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .styled-select {
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            background-color: #1abc9c;
+            color: #000000;
+            font-family: "Roboto Light", sans-serif;
+        }
+    </style>
 </head>
 <body>
 <h1>Error</h1>
 <p th:text="${errorMessage}"></p>
-<a href="/">Go back to home</a>
+<a href="/" class="styled-button">Go back to home</a>
 </body>
 </html>
