@@ -1,22 +1,18 @@
 package org.example;
-
+import jakarta.persistence.*;
 /*
  * Author: Marvin Strasser
  * Version: 1.1
  * Date: 19/12/2024
  */
+@Entity
 public class Account {
-    int id;
-    int balance;
-    String name;
-    int pin;
 
-    public Account(int id, int balance, String name, int pin) {
-        this.id = id;
-        this.balance = balance;
-        this.name = name;
-        this.pin = pin;
-    }
+    @Id
+    private int id;
+    private double balance;
+    private String name;
+    private int pin;
 
     public int getId() {
         return id;
@@ -26,11 +22,11 @@ public class Account {
         this.id = id;
     }
 
-    public int getBalance() {
+    public double getBalance() {
         return balance;
     }
 
-    public void setBalance(int balance) {
+    public void setBalance(double balance) {
         this.balance = balance;
     }
 
