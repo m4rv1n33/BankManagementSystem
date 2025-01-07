@@ -2,33 +2,11 @@
 <html th:lang="en" xmlns:th="http://www.thymeleaf.org" data-bs-theme="dark">
 <head>
     <title>Error</title>
-    <style>
-        body {
-            font-family: "Roboto Light", sans-serif;
-            color: #333333;
-            background-color: #f5f5f5;
-            text-align: center;
-        }
-        .styled-button {
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-            cursor: pointer;
-            border-radius: 12px;
-        }
-        .styled-button:hover {
-            background-color: #45a049;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
 </head>
 <body>
 <h1>Error</h1>
+<hr>
 <p th:text="${errorMessage}"></p>
 <a href="/" class="styled-button">Go back to home</a>
 </body>
