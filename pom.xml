@@ -22,11 +22,6 @@
         <relativePath/>
     </parent>
 
-    <!-- Java Compatibility -->
-    <properties>
-        <java.version>21</java.version>
-    </properties>
-
     <!-- Dependencies -->
     <dependencies>
         <!-- Spring Boot Starter Web (for Controllers and basic web support) -->

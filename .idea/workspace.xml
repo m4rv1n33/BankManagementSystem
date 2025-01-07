@@ -8,15 +8,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="49f58087-2a34-4d52-92e4-19825f58d521" name="Changes" comment="Fixed incorrect path for styling">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/AccountRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Transaction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/TransactionRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/schema.sql" afterDir="false" />
+    <list default="true" id="49f58087-2a34-4d52-92e4-19825f58d521" name="Changes" comment="Attempt to fix pom.xml. Error for MySQL connector still there.">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Transaction.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,11 +81,11 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Facets",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.17480469",
     "project.structure.side.proportion": "0.2",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "settings.editor.selected.configurable": "preferences.updates",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -155,7 +152,7 @@
       <workItem from="1734615731164" duration="1060000" />
       <workItem from="1734684796860" duration="1183000" />
       <workItem from="1736168313946" duration="638000" />
-      <workItem from="1736234780491" duration="7241000" />
+      <workItem from="1736234780491" duration="9313000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <option name="closed" value="true" />
@@ -261,7 +258,23 @@
       <option name="project" value="LOCAL" />
       <updated>1736238124261</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Attempt to connect DB. Not working atm.">
+      <option name="closed" value="true" />
+      <created>1736244229611</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1736244229611</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Attempt to fix pom.xml. Error for MySQL connector still there.">
+      <option name="closed" value="true" />
+      <created>1736245213239</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1736245213239</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -292,7 +305,9 @@
     <MESSAGE value="Removed unused CSS styling" />
     <MESSAGE value="Added a styling file" />
     <MESSAGE value="Fixed incorrect path for styling" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed incorrect path for styling" />
+    <MESSAGE value="Attempt to connect DB. Not working atm." />
+    <MESSAGE value="Attempt to fix pom.xml. Error for MySQL connector still there." />
+    <option name="LAST_COMMIT_MESSAGE" value="Attempt to fix pom.xml. Error for MySQL connector still there." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -303,5 +318,9 @@
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

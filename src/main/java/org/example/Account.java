@@ -14,6 +14,13 @@ public class Account {
     private String name;
     private int pin;
 
+    public Account(double balance, int id, String name, int pin) {
+        this.balance = balance;
+        this.id = id;
+        this.name = name;
+        this.pin = pin;
+    }
+
     public int getId() {
         return id;
     }
