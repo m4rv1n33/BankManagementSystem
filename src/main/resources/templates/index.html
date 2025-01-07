@@ -2,17 +2,16 @@
 <html th:lang="en" xmlns:th="http://www.thymeleaf.org" data-bs-theme="dark">
 <head>
     <title>ATM</title>
-
     <style>
         body {
             font-family: "Roboto Light", sans-serif;
-            color: #FFFFFF;
-            background-color: #17202a;
+            color: #333333;
+            background-color: #f5f5f5;
             text-align: center;
         }
         .styled-button {
-            background-color: #1abc9c;
-            color: #000000;
+            background-color: #4CAF50;
+            color: white;
             border: none;
             padding: 10px 20px;
             text-align: center;
@@ -22,10 +21,25 @@
             margin: 4px 2px;
             cursor: pointer;
             border-radius: 12px;
-            font-family: "Roboto Light", sans-serif;
         }
         .styled-button:hover {
-            background-color: #16a085;
+            background-color: #45a049;
+        }
+        .styled-button-exit {
+            background-color: #c0392b;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 12px;
+        }
+        .styled-button-exit:hover {
+            background-color: #e74c3c;
         }
         .styled-input {
             padding: 10px;
@@ -40,9 +54,8 @@
             border: 1px solid #ccc;
             border-radius: 4px;
             box-sizing: border-box;
-            background-color: #1abc9c;
-            color: #000000;
-            font-family: "Roboto Light", sans-serif;
+            background-color: #4CAF50;
+            color: white;
         }
     </style>
 </head>

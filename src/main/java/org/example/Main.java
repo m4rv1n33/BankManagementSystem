@@ -1,4 +1,5 @@
 package org.example;
+
 import java.util.Scanner;
 
 /*
@@ -19,7 +20,7 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in); // Declare scanner
-        
+
         // Start ATM
         System.out.println("Welcome to the ATM.");
         int choice = selectAccount(input);
@@ -34,28 +35,30 @@ public class Main {
     }
 
     public static int selectAccount(Scanner input) {
-        System.out.println("Please choose your account. (ID)");
-        int choice = input.nextInt();
-        if ((choice >= 1) && (choice <= 5)){
-            Account selectedAccount = getAccountById(choice);
+        while (true) {
+            System.out.println("Please choose your account. (ID)");
+            int choice = input.nextInt();
+            if ((choice >= 1) && (choice <= 5)) {
+                Account selectedAccount = getAccountById(choice);
 
-            //PIN Verification
-            if (selectedAccount != null) {
-                System.out.println("Please enter your PIN:");
-                int enteredPin = input.nextInt();
-                if (enteredPin == selectedAccount.getPin()) {
-                    return choice;
+                // PIN Verification
+                if (selectedAccount != null) {
+                    System.out.println("Please enter your PIN:");
+                    int enteredPin = input.nextInt();
+                    if (enteredPin == selectedAccount.getPin()) {
+                        return choice;
+                    } else {
+                        System.out.println("Incorrect PIN. Please try again.");
+                        continue;
+                    }
                 } else {
-                    System.out.println("Incorrect PIN. Please try again.");
-                    return selectAccount(input);
+                    System.out.println("Account not found. Please try again.");
+                    continue;
                 }
             } else {
-                System.out.println("Account not found. Please try again.");
-                return selectAccount(input);
+                System.out.println("Invalid account. Please try again.");
+                continue;
             }
-        } else {
-            System.out.println("Invalid account. Please try again.");
-            return selectAccount(input);
         }
     }
 
@@ -79,8 +82,7 @@ public class Main {
             if (menuChoiceINT == 4) {
                 System.out.println("Exiting... Thank you for using the ATM.");
                 break;
-            }
-            else {
+            } else {
                 switch (menuChoiceINT) {
                     case 1:
                         System.out.println("Checking balance...");

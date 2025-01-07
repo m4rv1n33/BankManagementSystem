@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="49f58087-2a34-4d52-92e4-19825f58d521" name="Changes" comment="Fixed script header">
+    <list default="true" id="49f58087-2a34-4d52-92e4-19825f58d521" name="Changes" comment="Prevented negative amounts in withdrawal and desposit process">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/AccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/AccountController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/menu.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,8 +104,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.22562.145" />
-        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-IU-243.22562.145" />
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.22562.218" />
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-IU-243.22562.218" />
       </set>
     </attachedChunks>
   </component>
@@ -129,7 +130,11 @@
       <workItem from="1734601038587" duration="6000" />
       <workItem from="1734603016863" duration="2748000" />
       <workItem from="1734609061139" duration="2237000" />
-      <workItem from="1734614410638" duration="295000" />
+      <workItem from="1734614410638" duration="1234000" />
+      <workItem from="1734615731164" duration="1060000" />
+      <workItem from="1734684796860" duration="1183000" />
+      <workItem from="1736168313946" duration="638000" />
+      <workItem from="1736234780491" duration="1624000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <option name="closed" value="true" />
@@ -195,7 +200,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734612003466</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Prevented negative amounts in withdrawal and desposit process">
+      <option name="closed" value="true" />
+      <created>1734614774266</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1734614774266</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -221,7 +234,8 @@
     <MESSAGE value="Removed &quot;Exit&quot; as a option in the selector.&#10;Created Logout button" />
     <MESSAGE value="PIN Input is no longer displayed&#10;Changed input type to password for PIN." />
     <MESSAGE value="Fixed script header" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed script header" />
+    <MESSAGE value="Prevented negative amounts in withdrawal and desposit process" />
+    <option name="LAST_COMMIT_MESSAGE" value="Prevented negative amounts in withdrawal and desposit process" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
