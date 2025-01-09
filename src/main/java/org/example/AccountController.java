@@ -1,4 +1,5 @@
 package org.example;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -6,11 +7,16 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import java.sql.Timestamp;
+
 @Controller
 public class AccountController {
 
     @Autowired
     private AccountRepository accountRepository;
+
+    @Autowired
+    private TransactionRepository transactionRepository;
 
     @GetMapping("")
     public String index() {
@@ -41,6 +47,7 @@ public class AccountController {
                     if (amount != null && amount > 0) {
                         account.setBalance(account.getBalance() + amount);
                         accountRepository.save(account);
+                        logTransaction(accountId, "deposit", amount);
                         model.addAttribute("message", "Deposited " + amount + ". New balance is: " + account.getBalance());
                     } else {
                         model.addAttribute("message", "Invalid amount.");
@@ -50,6 +57,7 @@ public class AccountController {
                     if (amount != null && amount > 0 && amount <= account.getBalance()) {
                         account.setBalance(account.getBalance() - amount);
                         accountRepository.save(account);
+                        logTransaction(accountId, "withdraw", amount);
                         model.addAttribute("message", "Withdrew " + amount + ". New balance is: " + account.getBalance());
                     } else if (amount != null && amount > 0) {
                         model.addAttribute("message", "Insufficient funds.");
@@ -70,5 +78,14 @@ public class AccountController {
     public String handleError(Model model) {
         model.addAttribute("errorMessage", "An unexpected error occurred.");
         return "error";
+    }
+
+    private void logTransaction(int accountId, String type, double amount) {
+        Transaction transaction = new Transaction();
+        transaction.setAccountId(accountId);
+        transaction.setType(type);
+        transaction.setAmount(amount);
+        transaction.setTimestamp(new Timestamp(System.currentTimeMillis()));
+        transactionRepository.save(transaction);
     }
 }
