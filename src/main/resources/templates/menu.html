@@ -23,6 +23,11 @@
     <button type="submit" class="styled-button" name="action" value="checkBalance">Check Balance</button>
 </form>
 <br>
+<form action="/transferPage" method="get">
+    <input type="hidden" name="accountId" th:value="${account.id}">
+    <button type="submit" class="styled-button">Go to Transfer Page</button>
+</form>
+<br>
 <a href="http://localhost:8080" class="styled-button-exit" value="exit">Exit</a>
 <p th:text="${message}"></p>
 </body>

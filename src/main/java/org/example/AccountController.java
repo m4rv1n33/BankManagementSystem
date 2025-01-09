@@ -23,6 +23,11 @@ public class AccountController {
         return "index";
     }
 
+    @GetMapping("/menu")
+    public String menuPage(Model model) {
+        return "menu";
+    }
+
     @PostMapping("/selectAccount")
     public String selectAccount(@RequestParam int accountId, @RequestParam int pin, Model model) {
         Account selectedAccount = accountRepository.findById(accountId).orElse(null);
@@ -71,6 +76,54 @@ public class AccountController {
         } else {
             model.addAttribute("error", "Account not found.");
             return "index";
+        }
+    }
+
+    @PostMapping("/transfer")
+    public String transfer(@RequestParam int fromAccountId, @RequestParam int toAccountId, @RequestParam double amount, Model model) {
+        Account fromAccount = accountRepository.findById(fromAccountId).orElse(null);
+        Account toAccount = accountRepository.findById(toAccountId).orElse(null);
+
+        if (fromAccount == null) {
+            model.addAttribute("errorMessage", "From account not found.");
+            return "transfer";
+        }
+
+        if (toAccount == null) {
+            model.addAttribute("errorMessage", "To account not found.");
+            return "transfer";
+        }
+
+        if (amount <= 0) {
+            model.addAttribute("errorMessage", "Invalid amount.");
+            return "transfer";
+        }
+
+        if (amount > fromAccount.getBalance()) {
+            model.addAttribute("errorMessage", "Insufficient funds.");
+            return "transfer";
+        }
+
+        fromAccount.setBalance(fromAccount.getBalance() - amount);
+        toAccount.setBalance(toAccount.getBalance() + amount);
+        accountRepository.save(fromAccount);
+        accountRepository.save(toAccount);
+        logTransaction(fromAccountId, "transfer_out", amount);
+        logTransaction(toAccountId, "transfer_in", amount);
+        model.addAttribute("message", "Transferred " + amount + " to " + toAccount.getName());
+        model.addAttribute("account", fromAccount); // Add the account to the model
+        return "transfer";
+    }
+
+    @GetMapping("/transferPage")
+    public String transferPage(@RequestParam int accountId, Model model) {
+        Account account = accountRepository.findById(accountId).orElse(null);
+        if (account != null) {
+            model.addAttribute("account", account);
+            return "transfer";
+        } else {
+            model.addAttribute("errorMessage", "Account not found.");
+            return "error";
         }
     }
 
