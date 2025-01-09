@@ -8,12 +8,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="49f58087-2a34-4d52-92e4-19825f58d521" name="Changes" comment="Added Transaction Log">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/transfer.html" afterDir="false" />
+    <list default="true" id="49f58087-2a34-4d52-92e4-19825f58d521" name="Changes" comment="Added ability to transfer">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/AccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/AccountController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/error.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/error.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/menu.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,7 +155,8 @@
       <workItem from="1736423742858" duration="1621000" />
       <workItem from="1736425458404" duration="2453000" />
       <workItem from="1736427998246" duration="677000" />
-      <workItem from="1736428761935" duration="1796000" />
+      <workItem from="1736428761935" duration="3516000" />
+      <workItem from="1736442077439" duration="138000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <option name="closed" value="true" />
@@ -329,7 +326,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736424727265</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Added ability to transfer">
+      <option name="closed" value="true" />
+      <created>1736430774142</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1736430774142</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -368,7 +373,8 @@
     <MESSAGE value="All account data is now DB-Side.&#10;Updated schema.sql" />
     <MESSAGE value="Removed Main.java due to it being unused" />
     <MESSAGE value="Added Transaction Log" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Transaction Log" />
+    <MESSAGE value="Added ability to transfer" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added ability to transfer" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
