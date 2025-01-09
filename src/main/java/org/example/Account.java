@@ -21,6 +21,9 @@ public class Account {
         this.pin = pin;
     }
 
+    public Account() {
+    }
+
     public int getId() {
         return id;
     }

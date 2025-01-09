@@ -8,8 +8,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="49f58087-2a34-4d52-92e4-19825f58d521" name="Changes" comment="Set DB root credentials in datasource">
+    <list default="true" id="49f58087-2a34-4d52-92e4-19825f58d521" name="Changes" comment="Fixed DB Connection in dataSources.xml">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/AccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/AccountController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/schema.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +153,7 @@
       <workItem from="1734684796860" duration="1183000" />
       <workItem from="1736168313946" duration="638000" />
       <workItem from="1736234780491" duration="10702000" />
-      <workItem from="1736416651330" duration="62000" />
+      <workItem from="1736416651330" duration="1404000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <option name="closed" value="true" />
@@ -287,7 +291,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736246652360</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Fixed DB Connection in dataSources.xml">
+      <option name="closed" value="true" />
+      <created>1736416788027</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1736416788027</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -322,7 +334,8 @@
     <MESSAGE value="Attempt to fix pom.xml. Error for MySQL connector still there." />
     <MESSAGE value="Fixed errors" />
     <MESSAGE value="Set DB root credentials in datasource" />
-    <option name="LAST_COMMIT_MESSAGE" value="Set DB root credentials in datasource" />
+    <MESSAGE value="Fixed DB Connection in dataSources.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed DB Connection in dataSources.xml" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

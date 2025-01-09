@@ -4,23 +4,18 @@ package org.example;
  * Version: 1.1
  * Date: 19/12/2024
  */
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class AccountController {
 
-    static Account[] accounts = {
-            new Account(1, 100, "Marvin Strasser", 3333),
-            new Account(2, 200, "John Doe", 4444),
-            new Account(3, 300, "Jane Doe", 5555),
-            new Account(4, 400, "John Smith", 6666),
-            new Account(5, 500, "Jane Smith", 7777)
-    };
+    @Autowired
+    private AccountRepository accountRepository;
 
     @GetMapping("")
     public String index() {
@@ -29,7 +24,7 @@ public class AccountController {
 
     @PostMapping("/selectAccount")
     public String selectAccount(@RequestParam int accountId, @RequestParam int pin, Model model) {
-        Account selectedAccount = getAccountById(accountId);
+        Account selectedAccount = accountRepository.findById(accountId).orElse(null);
         if (selectedAccount != null && selectedAccount.getPin() == pin) {
             model.addAttribute("account", selectedAccount);
             return "menu";
@@ -41,7 +36,7 @@ public class AccountController {
 
     @PostMapping("/menu")
     public String menu(@RequestParam int accountId, @RequestParam String action, @RequestParam(required = false) Integer amount, Model model) {
-        Account account = getAccountById(accountId);
+        Account account = accountRepository.findById(accountId).orElse(null);
         if (account != null) {
             switch (action) {
                 case "checkBalance":
@@ -50,6 +45,7 @@ public class AccountController {
                 case "deposit":
                     if (amount != null && amount > 0) {
                         account.setBalance(account.getBalance() + amount);
+                        accountRepository.save(account);
                         model.addAttribute("message", "Deposited " + amount + ". New balance is: " + account.getBalance());
                     } else {
                         model.addAttribute("message", "Invalid amount.");
@@ -58,6 +54,7 @@ public class AccountController {
                 case "withdraw":
                     if (amount != null && amount > 0 && amount <= account.getBalance()) {
                         account.setBalance(account.getBalance() - amount);
+                        accountRepository.save(account);
                         model.addAttribute("message", "Withdrew " + amount + ". New balance is: " + account.getBalance());
                     } else if (amount != null && amount > 0) {
                         model.addAttribute("message", "Insufficient funds.");
@@ -78,14 +75,5 @@ public class AccountController {
     public String handleError(Model model) {
         model.addAttribute("errorMessage", "An unexpected error occurred.");
         return "error";
-    }
-
-    private Account getAccountById(int id) {
-        for (Account account : accounts) {
-            if (account.getId() == id) {
-                return account;
-            }
-        }
-        return null;
     }
 }
