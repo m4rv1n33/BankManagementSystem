@@ -1,5 +1,4 @@
 package org.example;
-
 import jakarta.persistence.*;
 import java.sql.Timestamp;
 

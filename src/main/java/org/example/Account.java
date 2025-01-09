@@ -1,10 +1,5 @@
 package org.example;
 import jakarta.persistence.*;
-/*
- * Author: Marvin Strasser
- * Version: 1.1
- * Date: 19/12/2024
- */
 @Entity
 public class Account {
 
