@@ -2,14 +2,16 @@
 <project version="4">
   <component name="AnalysisUIOptions">
     <option name="ANALYZE_INJECTED_CODE" value="false" />
-    <option name="SCOPE_TYPE" value="10" />
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="49f58087-2a34-4d52-92e4-19825f58d521" name="Changes" comment="Added ability to transfer">
+    <list default="true" id="49f58087-2a34-4d52-92e4-19825f58d521" name="Changes" comment="Minor changes to schema.sql">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/schema.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/error.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/error.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/transfer.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/transfer.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +74,7 @@
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/marvi/Documents/BBW/Modul_319/Projekte/_01_Cars&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/marvi/Documents/Projekte (Non-BBW)&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -83,7 +85,7 @@
     &quot;project.structure.proportion&quot;: &quot;0.17480469&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.sync&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.general&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -157,6 +159,9 @@
       <workItem from="1736427998246" duration="677000" />
       <workItem from="1736428761935" duration="3516000" />
       <workItem from="1736442077439" duration="138000" />
+      <workItem from="1736443670876" duration="258000" />
+      <workItem from="1736505737318" duration="424000" />
+      <workItem from="1736509811128" duration="301000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <option name="closed" value="true" />
@@ -334,7 +339,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736430774142</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Minor changes to schema.sql">
+      <option name="closed" value="true" />
+      <created>1736443923533</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1736443923533</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -374,7 +387,8 @@
     <MESSAGE value="Removed Main.java due to it being unused" />
     <MESSAGE value="Added Transaction Log" />
     <MESSAGE value="Added ability to transfer" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added ability to transfer" />
+    <MESSAGE value="Minor changes to schema.sql" />
+    <option name="LAST_COMMIT_MESSAGE" value="Minor changes to schema.sql" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
