@@ -7,12 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="49f58087-2a34-4d52-92e4-19825f58d521" name="Changes" comment="Minor changes to schema.sql">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/schema.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/error.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/error.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/transfer.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/transfer.html" afterDir="false" />
-    </list>
+    <list default="true" id="49f58087-2a34-4d52-92e4-19825f58d521" name="Changes" comment="WOP Back to Menu button in transfer.html" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -161,7 +156,7 @@
       <workItem from="1736442077439" duration="138000" />
       <workItem from="1736443670876" duration="258000" />
       <workItem from="1736505737318" duration="424000" />
-      <workItem from="1736509811128" duration="301000" />
+      <workItem from="1736509811128" duration="658000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <option name="closed" value="true" />
@@ -347,7 +342,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736443923533</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="WOP Back to Menu button in transfer.html">
+      <option name="closed" value="true" />
+      <created>1736510400455</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1736510400455</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -388,7 +391,8 @@
     <MESSAGE value="Added Transaction Log" />
     <MESSAGE value="Added ability to transfer" />
     <MESSAGE value="Minor changes to schema.sql" />
-    <option name="LAST_COMMIT_MESSAGE" value="Minor changes to schema.sql" />
+    <MESSAGE value="WOP Back to Menu button in transfer.html" />
+    <option name="LAST_COMMIT_MESSAGE" value="WOP Back to Menu button in transfer.html" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
