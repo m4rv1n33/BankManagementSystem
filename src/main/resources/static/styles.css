@@ -12,6 +12,10 @@ hr {
     margin-bottom: 20px;
     border-color: lightslategray;
 }
+form {
+    height: auto;
+    padding: 20px;
+}
 .styled-button {
     background-color: #4CAF50;
     color: white;
@@ -28,22 +32,7 @@ hr {
 .styled-button:hover {
     background-color: #45a049;
 }
-.styled-button-create {
-    background-color: #FFA500;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 12px;
-}
-.styled-button-create:hover {
-    background-color: #FF7F50;
-}
+
 .styled-button-exit {
     background-color: #c0392b;
     color: white;
@@ -60,6 +49,23 @@ hr {
 .styled-button-exit:hover {
     background-color: #e74c3c;
 }
+.styled-button2 {
+    background-color: #FF7F50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+.styled-button2:hover {
+    background-color: #FF7F50;
+}
+
 .styled-input {
     padding: 10px;
     margin: 5px;

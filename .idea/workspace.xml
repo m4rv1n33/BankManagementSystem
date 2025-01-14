@@ -7,10 +7,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="49f58087-2a34-4d52-92e4-19825f58d521" name="Changes" comment="Implemented Account Creation">
+    <list default="true" id="49f58087-2a34-4d52-92e4-19825f58d521" name="Changes" comment="Displaying ID of account once account is created.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/AccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/AccountController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/createAccount.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/createAccount.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,7 +165,7 @@
       <workItem from="1736505737318" duration="424000" />
       <workItem from="1736509811128" duration="1455000" />
       <workItem from="1736755644680" duration="1301000" />
-      <workItem from="1736839631397" duration="5744000" />
+      <workItem from="1736839631397" duration="7421000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <option name="closed" value="true" />
@@ -407,7 +407,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736845129920</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Displaying ID of account once account is created.">
+      <option name="closed" value="true" />
+      <created>1736846512288</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1736846512288</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -425,7 +433,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Implemented PIN" />
     <MESSAGE value="Styling html pages" />
     <MESSAGE value="Removed &quot;Exit&quot; as a option in the selector.&#10;Created Logout button" />
     <MESSAGE value="PIN Input is no longer displayed&#10;Changed input type to password for PIN." />
@@ -450,7 +457,8 @@
     <MESSAGE value="Fixed &amp; Added back to menu button in transfer page." />
     <MESSAGE value="Implemented Error messages in transfer.html" />
     <MESSAGE value="Implemented Account Creation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented Account Creation" />
+    <MESSAGE value="Displaying ID of account once account is created." />
+    <option name="LAST_COMMIT_MESSAGE" value="Displaying ID of account once account is created." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
