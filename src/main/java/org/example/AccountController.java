@@ -150,11 +150,12 @@ public class AccountController {
         Account newAccount = new Account();
         newAccount.setName(name);
         newAccount.setPin(pin);
-        newAccount.setBalance(0.0);
         accountRepository.save(newAccount);
+
         model.addAttribute("message", "Account created successfully. Your account ID is: " + newAccount.getId());
-        return "index";
+        return "createAccount";
     }
+
 
     @GetMapping("/createAccountPage")
     public String createAccountPage() {

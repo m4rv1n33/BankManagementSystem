@@ -1,38 +1,24 @@
 package org.example;
 import jakarta.persistence.*;
+
 @Entity
 public class Account {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    private double balance;
+
     private String name;
     private int pin;
+    private double balance;
 
-    public Account(double balance, int id, String name, int pin) {
-        this.balance = balance;
-        this.id = id;
-        this.name = name;
-        this.pin = pin;
-    }
-
-    public Account() {
-    }
-
+    // Getters and setters
     public int getId() {
         return id;
     }
 
     public void setId(int id) {
         this.id = id;
-    }
-
-    public double getBalance() {
-        return balance;
-    }
-
-    public void setBalance(double balance) {
-        this.balance = balance;
     }
 
     public String getName() {
@@ -49,5 +35,13 @@ public class Account {
 
     public void setPin(int pin) {
         this.pin = pin;
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+
+    public void setBalance(double balance) {
+        this.balance = balance;
     }
 }
