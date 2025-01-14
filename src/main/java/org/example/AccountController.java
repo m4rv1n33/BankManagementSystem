@@ -24,7 +24,9 @@ public class AccountController {
     }
 
     @GetMapping("/menu")
-    public String menuPage(Model model) {
+    public String showMenu(@RequestParam int accountId, Model model) {
+        Account account = accountRepository.findById(accountId).orElse(null);
+        model.addAttribute("account", account);
         return "menu";
     }
 
