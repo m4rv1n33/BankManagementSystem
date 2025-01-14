@@ -7,11 +7,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="49f58087-2a34-4d52-92e4-19825f58d521" name="Changes" comment="Fixed &amp; Added back to menu button in transfer page.">
+    <list default="true" id="49f58087-2a34-4d52-92e4-19825f58d521" name="Changes" comment="Implemented Error messages in transfer.html">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/createAccount.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/AccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/AccountController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/menu.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/transfer.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/transfer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/schema.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,7 +168,7 @@
       <workItem from="1736505737318" duration="424000" />
       <workItem from="1736509811128" duration="1455000" />
       <workItem from="1736755644680" duration="1301000" />
-      <workItem from="1736839631397" duration="3374000" />
+      <workItem from="1736839631397" duration="4746000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <option name="closed" value="true" />
@@ -392,7 +394,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736841935630</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Implemented Error messages in transfer.html">
+      <option name="closed" value="true" />
+      <created>1736843909664</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1736843909664</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -410,7 +420,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fixed Errors&#10;Implemented While loop for menu.&#10;Choosing account now by ID" />
     <MESSAGE value="Minor improvements" />
     <MESSAGE value="Implemented PIN" />
     <MESSAGE value="Styling html pages" />
@@ -435,7 +444,8 @@
     <MESSAGE value="WOP Back to Menu button in transfer.html" />
     <MESSAGE value="WIP Back to Menu button in transfer.html" />
     <MESSAGE value="Fixed &amp; Added back to menu button in transfer page." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed &amp; Added back to menu button in transfer page." />
+    <MESSAGE value="Implemented Error messages in transfer.html" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented Error messages in transfer.html" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

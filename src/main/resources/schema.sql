@@ -9,7 +9,8 @@ CREATE TABLE Account
     id      INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
     balance DECIMAL(10, 2)                 NOT NULL DEFAULT '0',
     name    VARCHAR(100)                   NOT NULL,
-    pin     INT                            NOT NULL
+    pin     INT                            NOT NULL,
+    created TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL
 );
 
 -- Create the Transaction table

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html th:lang="en" xmlns:th="http://www.thymeleaf.org" data-bs-theme="dark">
+<head>
+    <title>Create Account</title>
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+</head>
+<body>
+<h1>Create Account</h1>
+<hr>
+<form action="/createAccount" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <label for="pin">PIN:</label>
+    <input type="password" id="pin" name="pin" required>
+    <button type="submit" class="styled-button">Create Account</button>
+</form>
+<p th:text="${message}"></p>
+<a href="http://localhost:8080" class="styled-button-exit">Back to Login</a>
+</body>
+</html>

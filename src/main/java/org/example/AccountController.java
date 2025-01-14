@@ -145,6 +145,22 @@ public class AccountController {
         return "error";
     }
 
+    @PostMapping("/createAccount")
+    public String createAccount(@RequestParam String name, @RequestParam int pin, Model model) {
+        Account newAccount = new Account();
+        newAccount.setName(name);
+        newAccount.setPin(pin);
+        newAccount.setBalance(0.0);
+        accountRepository.save(newAccount);
+        model.addAttribute("message", "Account created successfully. Your account ID is: " + newAccount.getId());
+        return "index";
+    }
+
+    @GetMapping("/createAccountPage")
+    public String createAccountPage() {
+        return "createAccount";
+    }
+
     private void logTransaction(int accountId, String type, double amount) {
         Transaction transaction = new Transaction();
         transaction.setAccountId(accountId);
